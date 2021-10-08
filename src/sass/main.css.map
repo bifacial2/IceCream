@@ -1,8 +1,12 @@
 {
     "version": 3,
-    "mappings": ";AAAA;;;GAGG;AUHH,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,qBAAqB;CACnC;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC;AACD,EAAE,CAAC;EACD,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,EAAE,CAAC;EACD,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
+    "mappings": ";AAAA;;;GAGG;ACHH,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,qBAAqB;CACnC;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC;AACD,EAAE,CAAC;EACD,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,EAAE,CAAC;EACD,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb;;AACD,AAAA,UAAU,CAAC;EACT,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,MAAM;CAkBhB;;AAjBC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAHrC,AAAA,UAAU,CAAC;IAIP,KAAK,EAAE,KAAK;GAgBf;;;AAbC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAPrC,AAAA,UAAU,CAAC;IAQP,SAAS,EAAE,KAAK;GAYnB;;;AATC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAXrC,AAAA,UAAU,CAAC;IAYP,SAAS,EAAE,KAAK;IAChB,OAAO,EAAE,MAAM;GAOlB;;;AAJC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAhBtC,AAAA,UAAU,CAAC;IAiBP,SAAS,EAAE,MAAM;IACjB,OAAO,EAAE,MAAM;GAElB",
     "sources": [
         "main.scss",
+        "base/_null.scss",
+        "utils/_colors.scss",
+        "utils/_placeholders.scss",
+        "utils/_mixin.scss",
         "components/_about.scss",
         "components/_advantages.scss",
         "components/_contacts.scss",
@@ -11,11 +15,7 @@
         "components/_gallery.scss",
         "components/_header.scss",
         "components/_modal-form.scss",
-        "components/_my-products.scss",
-        "base/_null.scss",
-        "utils/_colors.scss",
-        "utils/_mixin.scss",
-        "utils/_placeholders.scss"
+        "components/_my-products.scss"
     ],
     "names": [],
     "file": "main.css"

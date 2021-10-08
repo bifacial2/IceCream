@@ -4,6 +4,10 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './base/null';
+@import './utils/colors';
+@import './utils/placeholders';
+@import './utils/mixin';
 @import './components/about';
 @import './components/advantages';
 @import './components/contacts';
@@ -13,7 +17,3 @@
 @import './components/header';
 @import './components/modal-form';
 @import './components/my-products';
-@import './base/null';
-@import './utils/colors';
-@import './utils/mixin';
-@import './utils/placeholders';
