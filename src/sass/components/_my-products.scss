@@ -1,0 +1,144 @@
+//  product section
+
+.product {
+  text-align: center;
+}
+.product__label {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: $secondary-text-color;
+
+  margin-bottom: 15px;
+}
+
+.product__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+
+  color: $primary-text-color;
+}
+
+.product__list {
+  list-style: none;
+  text-align: center;
+}
+.product__front {
+  background-color: $main-text-color;
+  padding-top: 113px;
+  position: relative;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.product__item {
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+  padding-top: 161px;
+}
+.product__item--pink {
+  background-color: $secondary-text-color;
+  &::before {
+    content: '';
+    background-image: url('../images/product-1mobile.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/product-1mobile@2x.png');
+      background-size: contain;
+    }
+    width: 249px;
+    height: 252px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+}
+.product__item--yellow {
+  background-color: $specific-color;
+
+  &::before {
+    content: '';
+    background-image: url('../images/product-2mobile.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/product-2mobile@2x.png');
+      background-size: contain;
+    }
+    width: 249px;
+    height: 252px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+}
+.product__item--green {
+  background-color: $aditional-color;
+
+  &::before {
+    content: '';
+    width: 249px;
+    height: 252px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background-image: url('../images/product-3mobile.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/product-3mobile@2x.png');
+      background-size: contain;
+    }
+  }
+}
+
+.product__subtitle {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $main-text-color;
+  &::after {
+    content: '• • •';
+    display: block;
+    margin-top: 30px;
+  }
+}
+.product__description {
+  text-align: center;
+  padding: 30px 40px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: $main-text-color;
+
+  &::after {
+    content: '';
+    background-image: url('../images/arrow-right.png');
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 30px auto;
+  }
+}
