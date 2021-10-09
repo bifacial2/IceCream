@@ -3,6 +3,12 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+.gallery {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
