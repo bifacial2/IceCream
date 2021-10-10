@@ -442,30 +442,49 @@ img {
 }
 
 .image-number:before {
-  content: '• • •';
+  content: '';
   display: inline-block;
   margin-bottom: 16px;
-  background-image: url("https://image.flaticon.com/icons/svg/616/616430.svg");
-  width: 33px;
+  background-image: url("/images/iconmilk1.png");
+  background-position: center;
+  background-size: cover;
   height: 50px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .image-number:before {
+    background-image: url("/images/iconmilk1@2x.png");
+  }
+}
+
 .image-kg::before {
-  content: '• • •';
+  content: '';
   display: inline-block;
   margin-bottom: 16px;
-  color: #ffb8ca;
+  background-image: url("/images/iconpot2.png");
   width: 50px;
   height: 50px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .image-kg::before {
+    background-image: url("/images/iconpot2@2x.png");
+  }
+}
+
 .image-ice::before {
-  content: '• • •';
+  content: '';
   display: inline-block;
   margin-bottom: 16px;
-  color: #ffb8ca;
+  background-image: url("/images/iconice3.png");
   width: 44px;
   height: 50px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .image-ice::before {
+    background-image: url("/images/iconice3@2x.png");
+  }
 }
 
 .list-advantages {
