@@ -1,0 +1,117 @@
+.location {
+  background: #fff5f6;
+}
+.location__content {
+  padding-bottom: 113px;
+  @media screen and (min-width: 320px) {
+    padding-bottom: 167px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 167px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 167px;
+  }
+}
+.location__nav-list {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: 321px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location__nav-item {
+    display: inline-block;
+    max-width: 162px;
+    // margin: 0 auto;
+  }
+  .location__nav-item a {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 161px;
+    text-align: center;
+    border-radius: 22px;
+    padding: 14px 17px;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .location__nav-item:first-child a {
+    background-color: #d41342;
+    color: #fff;
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: #d41342;
+    }
+    &:hover,
+    &:focus .location__arrow-white {
+      stroke: #d41342;
+      --color1: #d41342;
+    }
+  }
+  .location__nav-item:last-child a {
+    background-color: #fff;
+    color: #d41342;
+    &:hover,
+    &:focus {
+      background-color: #d41342;
+      color: #fff;
+    }
+    &:hover .location__arrow-red {
+      stroke: #fff;
+      --color1: #fff;
+    }
+  }
+  .location__arrow {
+    display: inline-flex;
+    width: 4.3px;
+    height: 8px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .location__arrow-red {
+    stroke: #d41342;
+    --color1: #d41342;
+  }
+}
+.location__nav-item:first-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .location__nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .location__nav-item {
+      min-width: 198px;
+      margin-bottom: 0;
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+    .location__nav-item a {
+      width: 100%;
+      display: inline-block;
+      padding: 14px 36px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .location__nav-list {
+    // padding-bottom: 165px;
+    .location__nav-item {
+      min-width: 198px;
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+  }
+}
