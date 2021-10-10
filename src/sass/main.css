@@ -991,7 +991,7 @@ footer {
 .logo {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../img/logo-mobile-1x.png);
+  background-image: url(/src/images/header/logo-mobile-1x.png);
   /**
   @media screen and (min-width: 767px) {
     background-image: url(../img/logo-tablet-1x.png);
@@ -1019,7 +1019,7 @@ footer {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .logo {
-    background-image: url(../img/logo-mobile-2x.png);
+    background-image: url(/src/images/header/logo-mobile-2x.png);
   }
 }
 
