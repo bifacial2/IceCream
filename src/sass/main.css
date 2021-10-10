@@ -768,6 +768,54 @@ footer {
   margin-right: auto;
 }
 
+.link {
+  text-decoration: none;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -webkit-transition-duration: 350ms;
+          transition-duration: 350ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.link:hover, .link:focus {
+  color: #d41443;
+}
+
+.list {
+  list-style: none;
+}
+
+.header-container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (min-width: 480px) {
+  .header-container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    width: 1200px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
 .heading {
   background-color: #ffb8ca;
   overflow: hidden;
