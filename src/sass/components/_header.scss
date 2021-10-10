@@ -76,8 +76,6 @@
   @include text(DM Sans, 16px, 700, 1.31, 0.04em);
   color: $main-text-color;
 }
-
-/*
 .header__middle {
   display: flex;
   justify-content: space-between;
@@ -86,6 +84,80 @@
     padding-bottom: 25px;
   }
 }
+
+.header__text {
+  @include text(Titan One sans-serif, 26px, normal, 1.15, 0.04em);
+  font-family: 'Titan One', cursive;
+  color: $main-text-color;
+  text-transform: uppercase;
+  position: absolute;
+  top: 193px;
+  width: 218px;
+  z-index: 3;
+  @media screen and (min-width: 767px) {
+    position: static;
+    font-size: 22px;
+    width: 164px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    width: 277px;
+  }
+}
+
+.header__accent-text {
+  @include text(Titan One sans-serif, 48px, normal, 0.965, 0.04em);
+  font-family: 'Titan One', cursive;
+  color: $primary-text-color;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.header__many {
+  display: none;
+
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+}
+
+.header__many--count {
+  @include text(Titan One, 28px, normal, 1.14, 0.04em);
+  color: $primary-text-color;
+  position: relative;
+  z-index: 10;
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid $main-text-color;
+    border-radius: 50%;
+    background-color: $main-text-color;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    z-index: -1;
+    @media screen and (min-width: 1200px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.header__many--word {
+  @include text(DM Sans, 8px, normal, 1.25, 0.04em);
+  color: $main-text-color;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
+/*
+
 .header__bottom {
   display: flex;
   justify-content: space-between;
@@ -155,32 +227,8 @@
     display: none;
   }
 }
-.header__text {
-  @include text(Titan One sans-serif, 26px, normal, 1.15, 0.04em);
-  font-family: 'Titan One', cursive;
-  color: $main-text-color;
-  text-transform: uppercase;
-  position: absolute;
-  top: 193px;
-  width: 218px;
-  z-index: 3;
-  @media screen and (min-width: 767px) {
-    position: static;
-    font-size: 22px;
-    width: 164px;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 38px;
-    width: 277px;
-  }
-}
-.header__accent-text {
-  @include text(Titan One sans-serif, 48px, normal, 0.965, 0.04em);
-  font-family: 'Titan One', cursive;
-  color: $primary-text-color;
-  text-transform: uppercase;
-  z-index: 3;
-}
+
+
 .circle {
   width: 344px;
   height: 344px;
@@ -265,46 +313,9 @@
     background-size: cover;
   }
 }
-.header__many {
-  display: none;
 
-  @media screen and (min-width: 767px) {
-    display: block;
-  }
-}
-.header__many--word {
-  @include text(DM Sans, 8px, normal, 1.25, 0.04em);
-  color: $main-text-color;
-  display: block;
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-  }
-}
-.header__many--count {
-  @include text(Titan One, 28px, normal, 1.14, 0.04em);
-  color: $primary-text-color;
-  position: relative;
-  z-index: 10;
-  @media screen and (min-width: 1200px) {
-    font-size: 46px;
-  }
-  &::after {
-    content: '';
-    width: 16px;
-    height: 16px;
-    border: 1px solid $main-text-color;
-    border-radius: 50%;
-    background-color: $main-text-color;
-    position: absolute;
-    top: 0;
-    right: 2px;
-    z-index: -1;
-    @media screen and (min-width: 1200px) {
-      width: 30px;
-      height: 30px;
-    }
-  }
-}
+
+
 .header__milk {
   display: none;
 
