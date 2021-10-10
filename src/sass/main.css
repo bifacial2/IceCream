@@ -1066,7 +1066,6 @@ footer {
   font-family: 'Titan One', cursive;
   color: #d41443;
   text-transform: uppercase;
-  /**position: absolute;***/
   z-index: 3;
 }
 
@@ -1153,9 +1152,6 @@ footer {
   font-weight: 700;
   min-width: 160px;
   height: 44px;
-  /**position: absolute;
-  top: 38px;
-  right: 34px;**/
 }
 
 @media screen and (min-width: 767px) {
@@ -1171,9 +1167,6 @@ footer {
   width: 18px;
   height: 18px;
   display: none;
-  /**position: absolute;
-  top: 347px;
-  left: 154px;**/
 }
 
 @media screen and (min-width: 767px) {
