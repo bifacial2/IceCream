@@ -948,7 +948,7 @@ footer {
   width: 171px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../img/hero-icecream-mobile-1x.png);
+  background-image: url(/src/images/header/hero-icecream-mobile-1x.png);
   position: absolute;
   top: 9px;
   left: 81px;
@@ -956,19 +956,19 @@ footer {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header__hero {
-    background-image: url(../img/hero-icecream-mobile-2x.png);
+    background-image: url(/src/images/header/hero-icecream-mobile-2x.png);
   }
 }
 
 @media screen and (min-width: 767px) {
   .header__hero {
-    background-image: url(../img/hero-icecream-tablet-1x.png);
+    background-image: url(/src/images/header/hero-icecream-tablet-1x.png);
   }
 }
 
 @media screen and (min-width: 767px) and (min-device-pixel-ratio: 2) and (min-width: 767px), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
   .header__hero {
-    background-image: url(../img/hero-icecream-tablet-2x.png);
+    background-image: url(/src/images/header/hero-icecream-tablet-2x.png);
   }
 }
 
@@ -978,13 +978,13 @@ footer {
     left: 149px;
     height: 557px;
     width: 236px;
-    background-image: url(../img/hero-icecream-desktop-1x.png);
+    background-image: url(/src/images/header/hero-icecream-desktop-1x.png);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .header__hero {
-    background-image: url(../img/hero-icecream-desktop-2x.png);
+    background-image: url(/src/images/header/hero-icecream-desktop-2x.png);
   }
 }
 
