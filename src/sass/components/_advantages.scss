@@ -52,8 +52,7 @@
   content: '• • •';
   display: inline-block;
   margin-bottom: 16px;
-  /* color: #ffb8ca; */
-  /*  background-image: url(); */
+  background-image: url('https://image.flaticon.com/icons/svg/616/616430.svg');
   width: 33px;
   height: 50px;
 }
@@ -63,6 +62,8 @@
   display: inline-block;
   margin-bottom: 16px;
   color: #ffb8ca;
+  width: 50px;
+  height: 50px;
 }
 
 .image-ice::before {
@@ -70,6 +71,8 @@
   display: inline-block;
   margin-bottom: 16px;
   color: #ffb8ca;
+  width: 44px;
+  height: 50px;
 }
 
 .list-advantages {
