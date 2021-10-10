@@ -1,6 +1,5 @@
 .link {
   text-decoration: none;
-
   transition-property: color, fill;
   transition-duration: 350ms;
   transition-timing-function: linear;
@@ -9,7 +8,6 @@
     color: #d41443;
   }
 }
-
 .list {
   list-style: none;
 }
@@ -18,31 +16,25 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-
   position: relative;
-
   @media screen and (min-width: 480px) {
     width: 480px;
   }
-
   @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 34px;
     padding-right: 34px;
   }
-
   @media screen and (min-width: 1200px) {
     width: 1200px;
     padding-left: 115px;
     padding-right: 115px;
   }
 }
-
 .heading {
   background-color: $primary-background-color;
   overflow: hidden;
   height: 502px;
-
   @media screen and (min-width: 768px) {
     height: 399px;
   }
@@ -55,7 +47,6 @@
   justify-content: space-between;
   padding-top: 6px;
   padding-bottom: 137px;
-
   align-items: center;
   @media screen and (min-width: 768px) {
     padding-top: 37px;
@@ -76,12 +67,10 @@
     margin-right: 35px;
   }
 }
-
 .header__wide-menu--item {
   @include text(DM Sans, 16px, 700, 1.31, 0.04em);
   color: $main-text-color;
 }
-
 .header__middle {
   display: flex;
   justify-content: space-between;
@@ -115,48 +104,25 @@
   width: 171px;
   background-size: cover;
   background-repeat: no-repeat;
-
   background-image: url(/src/images/header/hero-icecream-mobile-1x.png);
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/src/images/header/hero-icecream-mobile-2x.png);
-  }
-
   @media screen and (min-width: 767px) {
     background-image: url(/src/images/header/hero-icecream-tablet-1x.png);
-
-    @media (min-device-pixel-ratio: 2) and (min-width: 767px),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(/src/images/header/hero-icecream-tablet-2x.png);
-    }
   }
-
   @media screen and (min-width: 1200px) {
     top: 56px;
     left: 149px;
     height: 557px;
     width: 236px;
     background-image: url(/src/images/header/hero-icecream-desktop-1x.png);
-
-    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(/src/images/header/hero-icecream-desktop-2x.png);
-    }
   }
-
   position: absolute;
   top: 9px;
   left: 81px;
 }
-
 .logo {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(/src/images/header/logo-mobile-1x.png);
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/src/images/header/logo-mobile-2x.png);
-  }
   /**
   @media screen and (min-width: 767px) {
     background-image: url(../img/logo-tablet-1x.png);
@@ -174,7 +140,6 @@
       background-image: url(../images/hero/hero-desktop-2x.jpg);
     }
   }**/
-
   width: 199px;
   height: 50px;
   display: inline-block;
@@ -182,7 +147,6 @@
   /**position: absolute;
   top: 6px;**/
 }
-
 .button-burger {
   background-color: transparent;
   border: none;
@@ -204,13 +168,11 @@
     display: none;
   }
 }
-
 .header__text {
   @include text(Titan One sans-serif, 26px, normal, 1.15, 0.04em);
   font-family: 'Titan One', cursive;
   color: $main-text-color;
   text-transform: uppercase;
-
   position: absolute;
   top: 193px;
   width: 218px;
@@ -225,7 +187,6 @@
     width: 277px;
   }
 }
-
 .header__accent-text {
   @include text(Titan One sans-serif, 48px, normal, 0.965, 0.04em);
   font-family: 'Titan One', cursive;
@@ -243,7 +204,6 @@
   top: 83px;
   right: -60px;
   z-index: 1;
-
   @media screen and (min-width: 767px) {
     right: 137px;
     top: 31px;
@@ -257,10 +217,8 @@
     height: 538px;
   }
 }
-
 .header__buttons {
   position: absolute;
-
   top: 318px;
   margin-bottom: 19px;
   z-index: 2;
@@ -268,14 +226,12 @@
     position: static;
   }
 }
-
 .btn {
   height: 24px;
   border-radius: 20px;
   border-color: transparent;
   background-color: $main-text-color;
   padding: 5px 15px;
-
   color: $primary-text-color;
   font-family: DM Sans;
   font-size: 8px;
@@ -283,23 +239,19 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
-
   transition-property: color, background-color;
   transition-duration: 350ms;
   transition-timing-function: linear;
-
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     height: 40px;
   }
-
   &:hover,
   &:focus {
     color: $main-text-color;
     background-color: $primary-text-color;
   }
 }
-
 .btn--buy {
   display: none;
   font-size: 16px;
@@ -342,7 +294,6 @@
     display: block;
   }
 }
-
 .header__many--word {
   @include text(DM Sans, 8px, normal, 1.25, 0.04em);
   color: $main-text-color;
@@ -351,7 +302,6 @@
     font-size: 14px;
   }
 }
-
 .header__many--count {
   @include text(Titan One, 28px, normal, 1.14, 0.04em);
   color: $primary-text-color;
@@ -377,7 +327,6 @@
     }
   }
 }
-
 .header__milk {
   display: none;
   /**position: absolute;
@@ -405,7 +354,6 @@
 }
 .header__girl {
   display: none;
-
   /**position: absolute;
   top: 245px;
   right: 34px;**/
@@ -414,7 +362,6 @@
     display: block;
   }
 }
-
 .header__girl--set {
   z-index: 10;
 }
