@@ -190,7 +190,7 @@
   /**position: absolute;
   top: 25px;
   right: 20px;**/
-  background-image: url(../img/burger.svg);
+  background-image: url(/src/images/header/burger.svg);
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -314,7 +314,7 @@
   }
 }
 .button-arrow-right {
-  background-image: url(../img/arrow-right.png);
+  background-image: url(/src/images/arrow-right.png);
   background-color: transparent;
   border: none;
   width: 18px;
