@@ -2,7 +2,7 @@
   text-decoration: none;
   transition-property: color, fill;
   transition-duration: 350ms;
-  transition-timing-function: linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: #d41443;
@@ -62,6 +62,15 @@
   }
 }
 
+.logo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/header/logo-mobile-1x.png);
+  width: 199px;
+  height: 50px;
+  display: inline-block;
+}
+
 .header__wide-menu {
   display: none;
   @media screen and (min-width: 1200px) {
@@ -75,6 +84,40 @@
 .header__wide-menu--item {
   @include text(DM Sans, 16px, 700, 1.31, 0.04em);
   color: $main-text-color;
+}
+
+.buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.button-burger {
+  background-color: transparent;
+  border: none;
+  fill: $primary-text-color;
+  background-image: url(../images/header/burger.svg);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  z-index: 10;
+  margin-right: 30px;
+  @media screen and (min-width: 767px) {
+    top: 52px;
+    right: 224px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.btn--buy {
+  display: none;
+  font-size: 16px;
+  font-weight: 700;
+  min-width: 160px;
+  height: 44px;
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
 }
 .header__middle {
   display: flex;
@@ -156,12 +199,52 @@
   }
 }
 
-/*
+.header__buttons {
+  position: absolute;
+  top: 318px;
+  margin-bottom: 19px;
+  z-index: 2;
+  @media screen and (min-width: 767px) {
+    position: static;
+  }
+}
+
+.btn {
+  height: 24px;
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: $main-text-color;
+  padding: 5px 15px;
+  color: $primary-text-color;
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    height: 40px;
+  }
+  &:hover,
+  &:focus {
+    color: $main-text-color;
+    background-color: $primary-text-color;
+  }
+}
+
+.btn--products {
+  margin-right: 8px;
+}
 
 .header__bottom {
   display: flex;
   justify-content: space-between;
 }
+
 .header__bottom--left {
   display: flex;
 }
@@ -173,61 +256,59 @@
     padding-top: 56px;
   }
 }
-.buttons {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-.header__hero {
-  height: 410px;
-  width: 171px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/src/images/header/hero-icecream-mobile-1x.png);
+.header__milk {
+  display: none;
+
   @media screen and (min-width: 767px) {
-    background-image: url(/src/images/header/hero-icecream-tablet-1x.png);
+    display: block;
+  }
+}
+
+.milk__text {
+  display: none;
+  width: 114px;
+  @include text(DM Sans, 8px, normal, 1.5, 0.04em);
+  color: $main-text-color;
+
+  @media screen and (min-width: 767px) {
+    display: block;
   }
   @media screen and (min-width: 1200px) {
-    top: 56px;
-    left: 149px;
-    height: 557px;
-    width: 236px;
-    background-image: url(/src/images/header/hero-icecream-desktop-1x.png);
+    font-size: 14px;
+    width: 200px;
   }
-  position: absolute;
-  top: 9px;
-  left: 81px;
 }
-.logo {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/src/images/header/logo-mobile-1x.png);
 
-  width: 199px;
-  height: 50px;
-  display: inline-block;
-
-}
-.button-burger {
+.button-arrow-right {
+  background-image: url(../images/arrow-right.png);
   background-color: transparent;
   border: none;
-  fill: $primary-text-color;
-
-  background-image: url(/src/images/header/burger.svg);
-  width: 20px;
-  height: 20px;
-  background-repeat: no-repeat;
-  z-index: 10;
-  margin-right: 30px;
+  width: 18px;
+  height: 18px;
+  display: none;
   @media screen and (min-width: 767px) {
-    top: 52px;
-    right: 224px;
+    display: block;
   }
   @media screen and (min-width: 1200px) {
-    display: none;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
+.header__girl--set {
+  z-index: 10;
+}
+
+.header__girl {
+  display: none;
+
+  z-index: 10;
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+}
 
 .circle {
   width: 344px;
@@ -251,100 +332,24 @@
     height: 538px;
   }
 }
-.header__buttons {
+
+.header__hero {
+  height: 410px;
+  width: 171px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/header/hero-icecream-mobile-1x.png);
+  @media screen and (min-width: 767px) {
+    background-image: url(../images/header/hero-icecream-tablet-1x.png);
+  }
+  @media screen and (min-width: 1200px) {
+    top: 56px;
+    left: 149px;
+    height: 557px;
+    width: 236px;
+    background-image: url(../images/header/hero-icecream-desktop-1x.png);
+  }
   position: absolute;
-  top: 318px;
-  margin-bottom: 19px;
-  z-index: 2;
-  @media screen and (min-width: 767px) {
-    position: static;
-  }
+  top: 9px;
+  left: 81px;
 }
-.btn {
-  height: 24px;
-  border-radius: 20px;
-  border-color: transparent;
-  background-color: $main-text-color;
-  padding: 5px 15px;
-  color: $primary-text-color;
-  font-family: DM Sans;
-  font-size: 8px;
-  line-height: 1.25;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  transition-property: color, background-color;
-  transition-duration: 350ms;
-  transition-timing-function: linear;
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    height: 40px;
-  }
-  &:hover,
-  &:focus {
-    color: $main-text-color;
-    background-color: $primary-text-color;
-  }
-}
-.btn--buy {
-  display: none;
-  font-size: 16px;
-  font-weight: 700;
-  min-width: 160px;
-  height: 44px;
-  @media screen and (min-width: 767px) {
-    display: block;
-  }
-}
-.button-arrow-right {
-  background-image: url(/src/images/arrow-right.png);
-  background-color: transparent;
-  border: none;
-  width: 18px;
-  height: 18px;
-  display: none;
-  @media screen and (min-width: 767px) {
-    display: block;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 26px;
-    height: 26px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-
-
-.header__milk {
-  display: none;
-
-  @media screen and (min-width: 767px) {
-    display: block;
-  }
-}
-.milk__text {
-  display: none;
-  width: 114px;
-  @include text(DM Sans, 8px, normal, 1.5, 0.04em);
-  color: $main-text-color;
-
-  @media screen and (min-width: 767px) {
-    display: block;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    width: 200px;
-  }
-}
-.header__girl {
-  display: none;
-
-  z-index: 10;
-  @media screen and (min-width: 767px) {
-    display: block;
-  }
-}
-.header__girl--set {
-  z-index: 10;
-}*/
