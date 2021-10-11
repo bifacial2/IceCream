@@ -20,6 +20,12 @@
     padding-bottom: 90px;
   }
 }
+.practice__image-tablet {
+  width: 100%;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
 .grid__body {
   display: none;
   grid-template-columns: 150px 150px 280px 150px 150px 150px;
@@ -104,10 +110,4 @@
   justify-self: center;
   align-self: center;
   padding-bottom: 160px;
-}
-.practice__image-tablet {
-  width: 100%;
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
 }
