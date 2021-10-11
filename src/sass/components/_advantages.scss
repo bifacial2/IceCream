@@ -6,6 +6,10 @@
   margin: -1px;
 }
 
+.advantages {
+  background: #fff5f6;
+}
+
 .level-advantage {
   font-family: Titan One;
   font-style: normal;
@@ -15,6 +19,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -104,4 +109,23 @@
 
 .list-advantages {
   margin-top: 22px;
+}
+
+.image-number,
+.image-kg {
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-advantages {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px), (min-width: 1199px) {
+  .list-advantages {
+    flex-basis: calc((100% - 180px) / 3);
+    justify-content: space-between;
+  }
 }

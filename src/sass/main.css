@@ -391,6 +391,10 @@ img {
   margin: -1px;
 }
 
+.advantages {
+  background: #fff5f6;
+}
+
 .level-advantage {
   font-family: Titan One;
   font-style: normal;
@@ -400,6 +404,7 @@ img {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -448,6 +453,8 @@ img {
   background-image: url("/images/iconmilk1.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 33px;
   height: 50px;
 }
 
@@ -462,6 +469,9 @@ img {
   display: inline-block;
   margin-bottom: 16px;
   background-image: url("/images/iconpot2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 50px;
   height: 50px;
 }
@@ -477,6 +487,9 @@ img {
   display: inline-block;
   margin-bottom: 16px;
   background-image: url("/images/iconice3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 44px;
   height: 50px;
 }
@@ -489,6 +502,26 @@ img {
 
 .list-advantages {
   margin-top: 22px;
+}
+
+.image-number,
+.image-kg {
+  margin-bottom: 38px;
+}
+
+@media screen and (min-width: 768px), (min-width: 1199px) {
+  .our-advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-advantages {
+    -ms-flex-preferred-size: calc((100% - 180px) / 3);
+        flex-basis: calc((100% - 180px) / 3);
+  }
 }
 
 .contacts {
