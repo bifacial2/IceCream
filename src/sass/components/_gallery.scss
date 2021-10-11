@@ -1,18 +1,30 @@
 .practice {
-  display: none;
-  max-width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
+  // display: none;
+  max-width: 1280px;
+  // margin-left: auto;
+  // margin-right: auto;
+
   background: rgb(255, 255, 255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(255, 245, 246, 1) 40%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 60%, rgba(255, 245, 246, 1) 40%);
   justify-content: center;
   text-align: center;
   align-items: center;
+  width: 100%;
+  padding-top: 74px;
+  padding-left: 0;
+  padding-right: 0;
+  @media screen and (min-width: 768px) {
+    padding-top: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 90px;
+  }
 }
 .grid__body {
+  display: none;
   grid-template-columns: 150px 150px 280px 150px 150px 150px;
   grid-template-rows: 280px 150px;
-  display: grid;
+  // display: grid;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   max-height: 430px;
@@ -20,6 +32,10 @@
   align-items: center;
   grid-auto-flow: column;
   justify-self: end;
+  @media screen and (min-width: 1280px) {
+    display: grid;
+    justify-content: center;
+  }
 }
 .item:hover {
   @media screen and (min-width: 1280px) {
@@ -88,4 +104,10 @@
   justify-self: center;
   align-self: center;
   padding-bottom: 160px;
+}
+.practice__image-tablet {
+  width: 100%;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
