@@ -494,6 +494,10 @@ img {
   height: 50px;
 }
 
+.image-ice::before .image-ice::before {
+  margin-bottom: 36px;
+}
+
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .image-ice::before {
     background-image: url("/images/iconice3@2x.png");
@@ -509,11 +513,19 @@ img {
   margin-bottom: 38px;
 }
 
-@media screen and (min-width: 768px), (min-width: 1199px) {
+@media screen and (min-width: 768px) {
   .our-advantages {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .image-ice::before,
+  .image-kg::before,
+  .image-number:before {
+    margin-bottom: 36px;
   }
 }
 
@@ -521,7 +533,17 @@ img {
   .list-advantages {
     -ms-flex-preferred-size: calc((100% - 180px) / 3);
         flex-basis: calc((100% - 180px) / 3);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 130px;
   }
+}
+
+.image-ice::before,
+.image-kg::before,
+.image-number:before {
+  margin-bottom: 36px;
 }
 
 .contacts {
