@@ -1,11 +1,6 @@
 footer {
   background-color: $background-extra-color;
 }
-.footer {
-  @media screen and (max-width: 767px) {
-    padding-top: 113px;
-  }
-}
 .footer__box {
   padding-bottom: 43px;
 
@@ -199,7 +194,8 @@ footer {
   }
 }
 .text__wrap-footer {
-  @media screen and (max-width: 1199px) {
-    display: block;
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: inline;
   }
 }

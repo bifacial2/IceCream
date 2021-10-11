@@ -75,13 +75,13 @@
   height: 598px;
   background-color: $main-text-color;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin: 0 auto;
     &:not(:last-child) {
       margin-bottom: 15px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 220px;
     height: 590px;
     flex-basis: calc(100% / 3 - 20px);
@@ -296,7 +296,7 @@
   &::after {
     content: '• • •';
     display: block;
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1279px) {
       margin: 30px 0;
     }
     @media screen and (min-width: 1280px) {
@@ -358,7 +358,7 @@
   color: $main-text-color;
 }
 .product__text--none {
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
 }
