@@ -38,7 +38,7 @@
   @media screen and (min-width: 768px) {
     height: 399px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     height: 665px;
   }
 }
@@ -123,37 +123,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../images/header/logo-mobile-1x.png);
-  /**
-  @media screen and (min-width: 767px) {
-    background-image: url(../img/logo-tablet-1x.png);
-    @media (min-device-pixel-ratio: 2) and (min-width: 767px),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../img/logo-tablet-2x.png);
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    background-image: url(..../images/hero/hero-desktop-1x.jpg);
-    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(..../images/hero/hero-desktop-2x.jpg);
-    }
-  }**/
   width: 199px;
   height: 50px;
   display: inline-block;
-  /**margin-top: 6px;
-  /**position: absolute;
-  top: 6px;**/
 }
 .button-burger {
   background-color: transparent;
   border: none;
   fill: $primary-text-color;
-  /**position: absolute;
-  top: 25px;
-  right: 20px;**/
+
   background-image: url(../images/header/burger.svg);
   width: 20px;
   height: 20px;
@@ -259,19 +237,23 @@
   height: 44px;
   @media screen and (min-width: 767px) {
     display: block;
+    z-index: 2;
   }
 }
 .button-arrow-right {
   background-image: url(../images/arrow-right.png);
+  background-size: cover;
   background-color: transparent;
   border: none;
   width: 18px;
   height: 18px;
   display: none;
   @media screen and (min-width: 767px) {
+    margin-top: 7px;
     display: block;
   }
   @media screen and (min-width: 1200px) {
+    margin-top: 20px;
     width: 26px;
     height: 26px;
     background-repeat: no-repeat;
@@ -280,9 +262,7 @@
 }
 .header__many {
   display: none;
-  /**position: absolute;
-  top: 96px;
-  right: 44px;**/
+
   @media screen and (min-width: 767px) {
     display: block;
   }
@@ -322,9 +302,7 @@
 }
 .header__milk {
   display: none;
-  /**position: absolute;
-  top: 245px;
-  left: 34px;***/
+
   @media screen and (min-width: 767px) {
     display: block;
   }
@@ -334,9 +312,7 @@
   width: 114px;
   @include text(DM Sans, 8px, normal, 1.5, 0.04em);
   color: $main-text-color;
-  /**position: absolute;
-  top: 292px;
-  left: 154px;*/
+
   @media screen and (min-width: 767px) {
     display: block;
   }
@@ -347,9 +323,7 @@
 }
 .header__girl {
   display: none;
-  /**position: absolute;
-  top: 245px;
-  right: 34px;**/
+
   z-index: 10;
   @media screen and (min-width: 767px) {
     display: block;
