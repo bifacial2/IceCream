@@ -1,8 +1,8 @@
 .link {
   text-decoration: none;
   transition-property: color, fill;
-  transition-duration: 350ms;
-  transition-timing-function: linear;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: #d41443;
@@ -25,12 +25,22 @@
     padding-left: 34px;
     padding-right: 34px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
     padding-left: 115px;
     padding-right: 115px;
   }
 }
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .heading {
   background-color: $primary-background-color;
   overflow: hidden;
@@ -38,7 +48,7 @@
   @media screen and (min-width: 768px) {
     height: 399px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 665px;
   }
 }
@@ -52,14 +62,14 @@
     padding-top: 37px;
     padding-bottom: 15px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: -69px;
     padding-bottom: 84px;
   }
 }
 .header__wide-menu {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     z-index: 10;
   }
@@ -75,7 +85,7 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 25px;
   }
 }
@@ -90,7 +100,7 @@
   display: block;
   z-index: 10;
   padding-top: 47px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 56px;
   }
 }
@@ -108,7 +118,7 @@
   @media screen and (min-width: 767px) {
     background-image: url(../images/header/hero-icecream-tablet-1x.png);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     top: 56px;
     left: 149px;
     height: 557px;
@@ -118,6 +128,9 @@
   position: absolute;
   top: 9px;
   left: 81px;
+
+  animation-name: changeOpacity;
+  animation-duration: 3500ms;
 }
 .logo {
   background-size: cover;
@@ -142,7 +155,7 @@
     top: 52px;
     right: 224px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -160,7 +173,7 @@
     font-size: 22px;
     width: 164px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 38px;
     width: 277px;
   }
@@ -187,7 +200,7 @@
     width: 322px;
     height: 322px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     right: 267px;
     top: 52px;
     width: 538px;
@@ -219,7 +232,7 @@
   transition-property: color, background-color;
   transition-duration: 350ms;
   transition-timing-function: linear;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     height: 40px;
   }
@@ -241,23 +254,32 @@
   }
 }
 .button-arrow-right {
-  background-image: url(../images/arrow-right.png);
+  /**background-image: url(../images/arrow-right.png);***/
   background-size: cover;
-  background-color: transparent;
+  background-color: #fff;
   border: none;
-  width: 18px;
-  height: 18px;
+  border-radius: 50%;
+  fill: #d41443;
+  background-position: center;
   display: none;
   @media screen and (min-width: 767px) {
     margin-top: 7px;
     display: block;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 20px;
     width: 26px;
     height: 26px;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $main-text-color;
+    background-color: $primary-text-color;
   }
 }
 .header__many {
@@ -271,7 +293,7 @@
   @include text(DM Sans, 8px, normal, 1.25, 0.04em);
   color: $main-text-color;
   display: block;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
   }
 }
@@ -280,7 +302,7 @@
   color: $primary-text-color;
   position: relative;
   z-index: 10;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 46px;
   }
   &::after {
@@ -294,7 +316,7 @@
     top: 0;
     right: 2px;
     z-index: -1;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 30px;
       height: 30px;
     }
@@ -302,6 +324,8 @@
 }
 .header__milk {
   display: none;
+  animation-name: changeOpacity;
+  animation-duration: 3500ms;
 
   @media screen and (min-width: 767px) {
     display: block;
@@ -316,7 +340,7 @@
   @media screen and (min-width: 767px) {
     display: block;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     width: 200px;
   }
@@ -331,4 +355,10 @@
 }
 .header__girl--set {
   z-index: 10;
+  padding-top: 5px;
+  animation-name: changeOpacity;
+  animation-duration: 3500ms;
+  @media screen and (min-width: 1280px) {
+    padding-top: 45px;
+  }
 }
