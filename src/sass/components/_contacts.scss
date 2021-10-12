@@ -3,18 +3,19 @@
 // }
 .contacts {
   background: $background-extra-color;
-  padding-bottom: 54px;
+  padding-bottom: 113px;
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
-    padding-bottom: 81px;
+    padding-bottom: 158px;
   }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/contacts-bg-min.png);
     background-repeat: no-repeat;
     background-size: contain;
-    padding-bottom: 86px;
+    padding-bottom: 165px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/contacts-bg-x2-min.png);
     }
@@ -25,10 +26,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 54px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 81px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 86px;
   }
 }
 .contact-title {
