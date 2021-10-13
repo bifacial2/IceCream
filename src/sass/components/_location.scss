@@ -135,6 +135,7 @@
 .location-modal {
   position: absolute;
   width: 80vw;
+  min-height: 400px;
   right: 10vw;
   left: 10vw;
   background-color: $background-extra-color;
@@ -185,4 +186,5 @@
 }
 iframe {
   border: transparent;
+  min-height: 400px;
 }
