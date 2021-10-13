@@ -61,7 +61,8 @@
     }
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 270px;
+    width: 330px;
+    font-size: 14px;
   }
   @media screen and (min-width: 768px) {
     width: 220px;
@@ -105,9 +106,12 @@
   width: 130px;
 }
 .contacts-card__text {
-  max-width: 179px;
+  width: 179px;
   color: $extra-text-color;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 220px;
+  }
   @media screen and (min-width: 768px) {
     width: 100%;
     margin-right: 0;
