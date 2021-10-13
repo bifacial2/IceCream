@@ -128,6 +128,7 @@
   bottom: 600px;
   left: 0;
   width: 80vw;
+  // height: 350px;
   // left: 50%;
   // transform: translateX(-50%);
 
@@ -151,6 +152,7 @@
 .location-modal {
   position: absolute;
   width: 80vw;
+  height: 350px;
   right: 10vw;
   left: 10vw;
   // width: 300px;
@@ -213,4 +215,7 @@
   border: 1px;
   background-color: #ffffff;
   cursor: pointer;
+}
+.location-map > iframe {
+  height: 100%;
 }
