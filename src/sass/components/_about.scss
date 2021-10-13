@@ -16,10 +16,10 @@
 }
 
 .about-container {
-  background-image: url(/images/about-mobile-milk@2x.png);
+  background-image: url(/images/about-mobile-milk.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right 0px bottom 30px;
+  background-position: right 0px bottom 69px;
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -31,16 +31,16 @@
     background-image: none;
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(/images/about-mobile-milk@2x.png);
+    background-image: url(/images/about-desktop-milk.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right 0px bottom -65px;
+    background-position: right 0px bottom -26px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/images/about-mobile-milk@2x.png);
+      background-image: url(/images/about-desktop-milk@2x.png);
     }
   }
 }
