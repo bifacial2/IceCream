@@ -128,6 +128,7 @@
   bottom: 600px;
   left: 0;
   width: 80vw;
+
   @media screen and (min-width: 768px) {
     top: 50px;
   }
@@ -135,7 +136,9 @@
 .location-modal {
   position: absolute;
   width: 80vw;
+
   min-height: 600px;
+
   right: 10vw;
   left: 10vw;
   background-color: $background-extra-color;
@@ -184,10 +187,12 @@
   background-color: #ffffff;
   cursor: pointer;
 }
+
 iframe {
   border: transparent;
   min-height: 400px;
   @media screen and (min-width: 768px) {
     min-height: 600px;
   }
+
 }
