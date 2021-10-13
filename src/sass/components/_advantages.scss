@@ -8,6 +8,13 @@
 
 .advantages {
   background: #fff5f6;
+  padding-bottom: 23px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-bottom: 140px;
+  }
 }
 
 .level-advantage {
@@ -113,13 +120,11 @@
   }
 }
 
-.list-advantages {
-  margin-top: 22px;
-}
-
-.image-number,
-.image-kg {
-  margin-bottom: 38px;
+@media screen and (max-width: 767px) {
+  .image-number,
+  .image-kg {
+    margin-bottom: 38px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -136,17 +141,8 @@
   .list-advantages {
     flex-basis: calc((100% - 180px) / 3);
     justify-content: space-between;
-    margin-bottom: 130px;
   }
 }
-
-/* @media screen and (min-width: 768px) {
-  .list-advantages {
-    flex-basis: calc((100% - 180px) / 3);
-    justify-content: space-between;
-    margin-bottom: 130px;
-  }
-} */
 
 @media screen and (min-width: 1280px) {
   .image-ice::before,

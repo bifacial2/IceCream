@@ -137,7 +137,9 @@
   height: 20px;
   background-repeat: no-repeat;
   z-index: 10;
+  @media screen and (min-width: 767px) {
   margin-right: 30px;
+  }
   @media screen and (min-width: 767px) {
     top: 52px;
     right: 224px;
